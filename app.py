@@ -1,6 +1,4 @@
 import os
-from os import environ as env
-from sys import argv
 from bottle import get,post,route,run,template,TEMPLATE_PATH,static_file,request,redirect,Bottle
 
 @get('/')
