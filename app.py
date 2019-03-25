@@ -1,3 +1,6 @@
+import os
+from os import environ as env
+from sys import argv
 from bottle import get,post,route,run,template,TEMPLATE_PATH,static_file,request,redirect,Bottle
 import os
 from bottle.ext.mongo import MongoPlugin
@@ -74,7 +77,4 @@ def upload():
 def home():
     redirect('/')
 
-if os.environ.get('APP_LOCATION') == 'heroku':
-    run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
-else:
-    run(host='localhost', port=8081, debug=True)
+bottle.run(host='0.0.0.0', port=argv[1],debug=True)
