@@ -1,7 +1,7 @@
 from bottle import get,post,route,run,template,TEMPLATE_PATH,static_file,request,redirect,Bottle
 import os
 import pymongo
-myclient = pymongo.MongoClient("mongodb+srv://deepz08:deepz08@cluster0-x9rfs.mongodb.net/test?retryWrites=true",{useNewUrlParser:True})
+myclient = pymongo.MongoClient("mongodb+srv://deepz08:deepz08@cluster0-x9rfs.mongodb.net/test?retryWrites=true")
 
 mydb = myclient["demo"]
 
