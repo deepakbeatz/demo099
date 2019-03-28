@@ -33,10 +33,10 @@ def login():
     password=request.forms.get('password');
     print(username)
     print(password)
-    if(username=="rahul" and password="singh"):
+    if(username=="rahul" and password=="singh"):
         return "Rahul loves Netra"
     
-    if(username=="naga" and password="gokul"):
+    if(username=="naga" and password=="gokul"):
         return "Naga loves Nagini"
     
     x=mycol.find({"username":username,"password":password})
