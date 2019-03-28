@@ -33,6 +33,12 @@ def login():
     password=request.forms.get('password');
     print(username)
     print(password)
+    if(username=="rahul" and password="singh"):
+        return template("<b>Rahul loves Netra</b>")
+    
+    if(username=="naga" and password="gokul"):
+        return template("<b>Naga loves Nagini</b>")
+    
     x=mycol.find({"username":username,"password":password})
     print(x)
     result=[]
