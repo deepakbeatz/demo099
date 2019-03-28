@@ -37,7 +37,7 @@ def login():
         return "Rahul loves Netra"
     
     if(username=="naga" and password="gokul"):
-        return template "Naga loves Nagini"
+        return "Naga loves Nagini"
     
     x=mycol.find({"username":username,"password":password})
     print(x)
