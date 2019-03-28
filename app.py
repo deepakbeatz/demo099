@@ -34,10 +34,10 @@ def login():
     print(username)
     print(password)
     if(username=="rahul" and password="singh"):
-        return template("<b>Rahul loves Netra</b>")
+        return "Rahul loves Netra"
     
     if(username=="naga" and password="gokul"):
-        return template("<b>Naga loves Nagini</b>")
+        return template "Naga loves Nagini"
     
     x=mycol.find({"username":username,"password":password})
     print(x)
